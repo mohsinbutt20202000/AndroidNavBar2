@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#0883d9</color>
+    <color name="color_primary_dark">#37eeff</color>
+    <color name="accent_color">#b15cc2</color>
+    <color name="drawerBackground">#FFFFFFFF</color>
+    <color name="whiteWriting">#ffffff</color>
+    <color name="WritingColor">#026188</color>
+</resources>

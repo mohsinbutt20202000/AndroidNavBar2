@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/drawerBackground">
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar">
+
+      <!--  <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/color_primary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/birthdayclock"
+
+                android:id="@+id/imgView"
+                android:layout_above="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textStyle="bold"
+                android:textColor="@color/whiteWriting"
+                android:gravity="center"
+                android:layout_marginTop="32dp"
+                android:textSize="25sp"
+                android:id="@+id/mainView"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imgView"
+                android:layout_marginLeft="7dp"
+
+                android:layout_toEndOf="@+id/imgView" />
+
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#f9f9fd"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/view4"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="110dp"
+                android:text="@string/activity_discription"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+<!--
+
+         </android.support.v7.widget.Toolbar>
+-->
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</RelativeLayout>

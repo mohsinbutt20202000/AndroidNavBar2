@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mohsin.com.androidnavbar2.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/TimeButton"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/time"
+        android:onClick="TimebaseEvent"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignRight="@+id/View01"
+        android:layout_alignEnd="@+id/View01"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_alignParentTop="true"
+        style="@android:style/Widget.RatingBar" />
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/AutoSendMsgButton1"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/autosendmsg"
+        android:onClick="LocationbaseEvent"
+        android:background="?android:attr/selectableItemBackground"
+        style="@android:style/Widget.RatingBar"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_alignRight="@+id/View01"
+        android:layout_alignEnd="@+id/View01"
+        android:layout_below="@+id/TimeButton" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/locationevnet"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/locationevent"
+        android:onClick="TimebaseEvent"
+        android:background="?android:attr/selectableItemBackground"
+        style="@android:style/Widget.RatingBar"
+        android:layout_toRightOf="@+id/TimeButton"
+        android:layout_toEndOf="@+id/TimeButton"
+        android:layout_alignBottom="@+id/TimeButton"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/CallBlockerButton"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/blocker"
+        android:onClick="TimebaseEvent"
+        android:background="?android:attr/selectableItemBackground"
+        style="@android:style/Widget.RatingBar"
+        android:layout_alignTop="@+id/AutoSendMsgButton1"
+        android:layout_toRightOf="@+id/AutoSendMsgButton1"
+        android:layout_above="@+id/SettingButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SettingButton"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/setting"
+        android:onClick="TimebaseEvent"
+        android:background="?android:attr/selectableItemBackground"
+        style="@android:style/Widget.RatingBar"
+        android:layout_alignTop="@+id/view3"
+        android:layout_alignRight="@+id/View01"
+        android:layout_alignEnd="@+id/View01"
+        android:layout_alignParentBottom="true" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/AboutButton"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/about"
+        android:background="?android:attr/selectableItemBackground"
+        style="@android:style/Widget.RatingBar"
+        android:layout_alignTop="@+id/view3"
+        android:layout_alignRight="@+id/CallBlockerButton"
+        android:layout_alignEnd="@+id/CallBlockerButton"
+        android:layout_toRightOf="@+id/SettingButton"
+        android:layout_toEndOf="@+id/SettingButton"
+        android:layout_alignParentBottom="true" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:background="#FF0883D9"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <View
+
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#FF0883D9"
+        android:layout_marginBottom="152dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/view3"
+        android:layout_alignBottom="@+id/View01"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignStart="@+id/view2" />
+
+    <View
+
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#FF0883D9"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="166dp"
+        android:layout_alignTop="@+id/View01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view2" />
+
+
+
+
+</RelativeLayout>
